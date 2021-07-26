@@ -2,7 +2,6 @@ package com.demo.netty.http;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
@@ -10,14 +9,27 @@ import io.netty.util.CharsetUtil;
 
 import java.net.URI;
 
+/*
+说明
+1. SimpleChannelInboundHandler 是 ChannelInboundHandlerAdapter
+2. HttpObject 客户端和服务器端相互通讯的数据被封装成 HttpObject
+ */
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
+
+    //channelRead0 读取客户端数据
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
-        System.out.println("对应的channel=" + ctx.channel() + " pipeline=" + ctx.pipeline() + " 通过pipeline获取channel" + ctx.pipeline().channel());
+
+
+        System.out.println("对应的channel=" + ctx.channel() + " pipeline=" + ctx
+        .pipeline() + " 通过pipeline获取channel" + ctx.pipeline().channel());
+
         System.out.println("当前ctx的handler=" + ctx.handler());
 
+        //判断 msg 是不是 httprequest请求
         if(msg instanceof HttpRequest) {
+
             System.out.println("ctx 类型="+ctx.getClass());
 
             System.out.println("pipeline hashcode" + ctx.pipeline().hashCode() + " TestHttpServerHandler hash=" + this.hashCode());
@@ -45,7 +57,10 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
 
             //将构建好 response返回
             ctx.writeAndFlush(response);
-        }
 
+        }
     }
+
+
+
 }
