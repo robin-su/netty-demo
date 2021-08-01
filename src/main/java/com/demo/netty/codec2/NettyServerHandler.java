@@ -21,9 +21,7 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MyDataInfo.M
      */
     @Override
     public void channelRead0(ChannelHandlerContext ctx, MyDataInfo.MyMessage msg) throws Exception {
-
         //根据dataType 来显示不同的信息
-
         MyDataInfo.MyMessage.DataType dataType = msg.getDataType();
         if(dataType == MyDataInfo.MyMessage.DataType.StudentType) {
 
@@ -68,7 +66,6 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MyDataInfo.M
     }
 
     //处理异常, 一般是需要关闭通道
-
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         ctx.close();
