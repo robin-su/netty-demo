@@ -6,6 +6,9 @@ import io.netty.handler.codec.ReplayingDecoder;
 
 import java.util.List;
 
+/**
+ * 用void表示不需要状态管理
+ */
 public class MyByteToLongDecoder2 extends ReplayingDecoder<Void> {
 
     @Override

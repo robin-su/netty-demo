@@ -19,6 +19,8 @@
             <artifactId>protobuf-java</artifactId>
             <version>3.15.8</version>
         </dependency>
+
+
     </dependencies>
 
     <properties>
