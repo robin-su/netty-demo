@@ -1,0 +1,9 @@
+
+d
+java:S2095"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(òËñÊ
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8Ô¾Ô…¦/
+\
+java:S1075
+"ARefactor your code to get this URI from a customizable parameter.(Ğ¶íÒùÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Şé¯ç8… ×…¦/

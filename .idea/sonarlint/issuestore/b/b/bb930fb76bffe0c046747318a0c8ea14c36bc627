@@ -1,0 +1,12 @@
+
+h
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(·ÂÛşÿÿÿÿ
+d
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(›ñ¶ù
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+W
+java:S1075
+"ARefactor your code to get this URI from a customizable parameter.(™Ó²Ã
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(äá¢íşÿÿÿÿ

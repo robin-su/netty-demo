@@ -1,0 +1,15 @@
+
+e
+java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(’õ…¹ıÿÿÿÿ
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+U
+java:S1128":Remove this unused import 'javax.net.ssl.SSLServerSocket'.(ùŒüÚÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(½µÆÿÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ÔÏ‹Ü
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(÷³Á
+B
+java:S1602%",Remove useless curly braces around statement(ÈÜ§
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Ş¿‚Û
+S	java:S106="9Replace this use of System.out or System.err by a logger.(Âäèÿÿÿÿÿ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(çóêé
